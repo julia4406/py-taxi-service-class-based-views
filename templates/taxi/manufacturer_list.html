@@ -2,6 +2,8 @@
 
 {% block content %}
   {% if manufacturer_list %}
+    <h4>Manufacturers</h4>
+    <hr>
     <ul class="manufacturers-nav">
     {% for item in manufacturer_list %}
       <li>{{ item.name }} ({{ item.country }})</li>
